@@ -41,31 +41,6 @@
 
 		<div id="nav-drawer">
 			<ul id="nav-items">
-				<li class="active"><a href="/">Home</a></li>
-				<li><a href="#">Vandure</a></li>
-				<li><a href="#">Cloud Weddings</a></li>
-				<li><a href="#">Pokok.KL</a></li>
-				<li><a href="#">Brick House Group</a></li>
-				<li><a href="#">Tepi-Jalan</a></li>
-				<li><a href="#">Our Girl</a></li>
-				<li><a href="#">Silo x DTW - Twilight</a></li>
-				<li class="category">Projects</li>
-				<li><a href="#">Project Papyrus</a></li>
-				<li><a href="#">Solar Brightbox</a></li>
-				<li><a href="#">Blender3DChallenge</a></li>
-				<li><a href="#">Firework Visualization</a></li>
-				<li class="category">Fonts</li>
-				<li><a href="#">Underpromise Font</a></li>
-				<li><a href="#">Overdeliver Font</a></li>
-				<li class="category">Games</li>
-				<li><a href="#">Dismaya</a></li>
-				<li><a href="#">Light A Way</a></li>
-				<li><a href="#">The Little Llama</a></li>
-				<li><a href="#">Maximum Dodo</a></li>
-				<li class="category">Seyvaq</li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Email</a></li>
-				<li><a href="#">Linkedin</a></li>
 			</ul>
 			<div id="nav-items-back"></div>
 		</div>
@@ -146,34 +121,23 @@
 
 			<img class="item w1 unhover" src="img/seyvaq-cover.gif" alt="Seyvaq">
 
-
-
 		</div>
 	</div>
 
 	<footer id="footer">
 		<p>
-			v3.0.2 Made with Love | <a href="#">Github Repo</a> | All work shown is copyright © 2022 Seyvaq Singh
+			v3.0.2 Made with Love | All work shown is copyright © 2022 Seyvaq Singh
 		</p>
 	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/nav.js"></script>
-	<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-	<script>
-	$("#footer").load( "footer.html" );
-	</script>
-
+	<script>$("#footer").load( "footer.html" );</script>
+	<script>$("#nav-items").load( "menu.html" );</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-
 	<script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
 	<script>
-		// const player = new Plyr('.player');
 		const players = Plyr.setup('.player', {
 			fullscreen: {
 				enabled: false
@@ -181,29 +145,22 @@
 		}, );
 	</script>
 
-
 	<script>
 		var container = document.querySelector('#index-content');
 		var msnry;
-
 		$(container).imagesLoaded()
-
 			.always(function(instance) {
-
 				msnry = new Masonry(container, {
 					columnWidth: '.grid-sizer',
 					gutter: '.grid-gutter',
 					itemSelector: '.item',
 					transitionDuration: '0.1s'
 				});
-
 				imgLoadHandler = function() {
 					console.log("img loaded, calling masonry.layout()");
 					msnry.layout();
 				}
-
 				$('img').bind('load', imgLoadHandler);
-
 				$('#loader').hide();
 			});
 	</script>
