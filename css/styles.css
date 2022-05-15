@@ -256,6 +256,10 @@ footer p {
   background: #fff
 }
 
+.bottled-hope #nav-icon, .bottled-hope #nav-icon:after, .bottled-hope #nav-icon:before {
+  background: #fff
+}
+
 .light-a-way #nav-icon, .light-a-way #nav-icon:after, .light-a-way #nav-icon:before {
   background: #fff
 }
@@ -347,6 +351,10 @@ footer p {
   background-size:cover;
 }
 
+.bottled-hope #top {
+  background: #292929;
+}
+
 .light-a-way #top {
   background: #1c1135;
 }
@@ -373,11 +381,6 @@ footer p {
 .little-llama #top {
   background: #5c6577;
 }
-
-/* .xbox-avatars #top:hover {
-  background: linear-gradient(0deg, rgba(41, 41, 41, 0.8), rgba(41, 41, 41, 0.9));
-  background-size:cover;
-} */
 
 .xbox-avatars nav li a:hover {
   border-bottom: 1px solid #7063c0 !important;
