@@ -604,6 +604,17 @@ nav li.active a, nav li.active a:hover {
   cursor: pointer
 }
 
+#nav-btn-home {
+  padding: 12px 0 0 72px;
+  position: absolute;
+  z-index: 1003;
+  cursor: pointer;
+}
+
+#nav-btn-home a {
+  color: white !important;
+}
+
 #darken {
   opacity: 0;
   background-color: #000;
@@ -634,6 +645,10 @@ nav li.active a, nav li.active a:hover {
   #nav-btn {
     padding-left: 4% !important
   }
+
+  #nav-btn-home {
+    padding-left: 16% !important
+  }
 }
 
 @media only screen and (min-width:1920px) {
@@ -647,6 +662,10 @@ nav li.active a, nav li.active a:hover {
 
   #nav-btn {
     padding-left: 24px !important
+  }
+
+  #nav-btn-home {
+    padding-left: 72px !important
   }
 }
 

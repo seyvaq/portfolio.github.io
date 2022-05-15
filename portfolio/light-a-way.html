@@ -15,7 +15,7 @@
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js" async="">
 	</script>
-
+	<script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
 </head>
 
 <body class="light-a-way light" cz-shortcut-listen="true">
@@ -32,6 +32,9 @@
 		<div id="nav-btn">
 			<div id="nav-icon"></div>
 			<p class="hidden">Menu</p>
+			<div id="nav-btn-home">
+				<a href="/"><i data-feather="home"></i></a>
+			</div>
 		</div>
 
 		<div id="nav-drawer" style="left: -295px; display: block;">
@@ -97,6 +100,8 @@
 	<script src="../js/nav.js"></script>
 	<script>$("#footer").load( "../footer.html" );</script>
 	<script>$("#nav-items").load( "../menu.html" );</script>
-
+	<script>
+		feather.replace()
+	</script>
 </body>
 </html>
