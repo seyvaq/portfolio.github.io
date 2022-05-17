@@ -838,3 +838,13 @@ nav li.active a, nav li.active a:hover {
     opacity: 0;
   }
 }
+
+.portfolio-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-text p {
+  margin: 0;
+}
