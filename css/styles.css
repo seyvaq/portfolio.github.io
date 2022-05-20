@@ -848,3 +848,8 @@ nav li.active a, nav li.active a:hover {
 .portfolio-text p {
   margin: 0;
 }
+
+#content-container {
+  margin: 0 auto;
+  max-width: 2600px;
+}
