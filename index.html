@@ -62,13 +62,13 @@
 
 	<div id="top">
 		<div id="top-content">
-			<p class="large header-text">
+			<p class="large header-text hidden" id="header">
 				Hello, my name is Seyvaq.
 			</p>
-			<p class="large">
+			<p class="large hidden" id="headText">
 				I’m an Art Director & Designer focusing on experience, product, and branding. My work spans across both print and digital media, with some games sprinkled between. I'm based in Kuala Lumpur and am currently looking for my next challenge.
 			</p>
-			<p class="links">
+			<p class="links hidden" id="headLinks">
 				<a href="mailto:hello@seyvaq.com" class="tooltip"  target="_blank">
 					<i data-feather="mail"></i>
 					<span class="tooltiptext">hello@seyvaq.com</span>
@@ -79,10 +79,10 @@
 	</div>
 
 	<div id="content-container">
-		<div id="index-content">
+		<div id="index-content" class="hidden">
 			<div class="grid-gutter"></div>
 
-		<div class="hoverable item w2">
+		<div class="hoverable item w2" id="pokokKL">
 			<a href="portfolio/pokok-kl">
 				<i data-feather="link"></i>
 				<div class="slider-wrapper">
@@ -94,7 +94,7 @@
 			</a>
 		</div>
 
-			<div class="item w2 unhover">
+			<div class="item w2 unhover" id="merdeka">
 				<div class="proportional ratio-16-9">
 					<div class="plyr__video-embed player">
 						<iframe src="https://player.vimeo.com/video/703565617?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media" allowfullscreen allowtransparency allow="autoplay"></iframe>
@@ -102,7 +102,7 @@
 				</div>
 			</div>
 
-			<div class="hoverable item w2">
+			<div class="hoverable item w2" id="tepiJalan">
 				<a href="portfolio/tepi-jalan">
 					<i data-feather="link"></i>
 					<div class="slider-wrapper">
@@ -114,7 +114,7 @@
 				</a>
 			</div>
 
-			<div class="item unhover">
+			<div class="item unhover" id="twilight">
 				<div class="proportional ratio-16-9">
 					<div class="plyr__video-embed player" style="position: relative; width: 100%;">
 						<iframe src="https://www.youtube.com/embed/i7M01_VSlWI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 
-			<div class="hoverable item grid-sizer">
+			<div class="hoverable item grid-sizer" id="vandure">
 				<a href="portfolio/vandure">
 					<i data-feather="link"></i>
 					<div class="slider-wrapper">
@@ -135,7 +135,7 @@
 				</a>
 			</div>
 
-			<div class="hoverable item">
+			<div class="hoverable item" id="cloudWedding">
 				<a href="portfolio/cloud-wedding">
 					<i data-feather="link"></i>
 					<div class="slider-wrapper">
@@ -147,9 +147,9 @@
 				</a>
 			</div>
 
-			<img class="item grid-sizer unhover" src="img/dismaya-cover.gif" alt="Dismaya">
+			<img class="item grid-sizer unhover" id="dismaya" src="img/dismaya-cover.gif" alt="Dismaya">
 
-			<div class="item unhover">
+			<div class="item unhover" id="pita">
 				<div class="proportional ratio-16-9">
 					<div class="plyr__video-embed player">
 						<iframe src="https://player.vimeo.com/video/701620333?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media" allowfullscreen allowtransparency allow="autoplay"></iframe>
@@ -157,7 +157,7 @@
 				</div>
 			</div>
 
-		<div class="hoverable item w1">
+		<div class="hoverable item w1" id="lightAWay">
 			<a href="portfolio/light-a-way">
 				<i data-feather="link"></i>
 				<div class="slider-wrapper">
@@ -169,9 +169,9 @@
 			</a>
 		</div>
 
-			<img class="item w1 unhover" src="img/underpromise-cover.webp" alt="Underpromise Overdeliver">
+			<img class="item w1 unhover" id="underpromise" src="img/underpromise-cover.webp" alt="Underpromise Overdeliver">
 
-		<div class="hoverable item w1">
+		<div class="hoverable item w1" id="orkestraMelayang">
 			<a href="portfolio/orkestra-melayang">
 				<i data-feather="link"></i>
 				<div class="slider-wrapper">
@@ -183,12 +183,12 @@
 			</a>
 		</div>
 
-			<img class="item w1 unhover" src="img/seyvaq-cover.gif" alt="Seyvaq">
+			<img class="item w1 unhover" id="seyvaq" src="img/seyvaq-cover.gif" alt="Seyvaq">
 
 		</div>
 	</div>
 
-	<footer id="footer">
+	<footer id="footer" class="hidden">
 		<p>
 			v3.0.2 Made with Love | All work shown is copyright © 2022 Seyvaq Singh
 		</p>
@@ -221,6 +221,21 @@
 		}, );
 	</script>
 	<script>
+		feather.replace()
+	</script>
+	<script>
+			$(document).ready(function () {
+
+		    $('#header').fadeIn(300).removeClass('hidden');
+				setTimeout(function() {$('#headText').fadeIn(300).removeClass('hidden');}, 300);
+				setTimeout(function() {$('#headLinks').fadeIn(300).removeClass('hidden');}, 600);
+				setTimeout(function() {$('#index-content').fadeIn(300).removeClass('hidden');}, 2000);
+				setTimeout(function() {$('#footer').fadeIn(300).removeClass('hidden');}, 2200);
+
+			});
+	</script>
+	<script>
+	setTimeout(function() {
 		var container = document.querySelector('#index-content');
 		var msnry;
 		$(container).imagesLoaded()
@@ -238,9 +253,7 @@
 				$('img').bind('load', imgLoadHandler);
 				$('#loader').hide();
 			});
-	</script>
-	<script>
-		feather.replace()
+		}, 2100);
 	</script>
 
 </body>
