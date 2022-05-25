@@ -25,11 +25,14 @@
 	<script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DH5T4C0LJL"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'G-DH5T4C0LJL');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DH5T4C0LJL');
 	</script>
 </head>
 
@@ -69,7 +72,7 @@
 				I’m an Art Director & Designer focusing on experience, product, and branding. My work spans across both print and digital media, with some games sprinkled between. I'm based in Kuala Lumpur and am currently looking for my next challenge.
 			</p>
 			<p class="links hidden" id="headLinks">
-				<a href="mailto:hello@seyvaq.com" class="tooltip"  target="_blank">
+				<a href="mailto:hello@seyvaq.com" class="tooltip" target="_blank">
 					<i data-feather="mail"></i>
 					<span class="tooltiptext">hello@seyvaq.com</span>
 				</a>
@@ -82,17 +85,17 @@
 		<div id="index-content" class="hidden">
 			<div class="grid-gutter"></div>
 
-		<div class="hoverable item w2" id="pokokKL">
-			<a href="portfolio/pokok-kl">
-				<i data-feather="link"></i>
-				<div class="slider-wrapper">
-          <div class="slider">
-              <div class="slider-text1">Pokok KL</div>
-          </div>
-				</div>
-				<img class="w3" src="img/pokok-kl-cover.gif" alt="Pokok.KL">
-			</a>
-		</div>
+			<div class="hoverable item w2" id="pokokKL">
+				<a href="portfolio/pokok-kl">
+					<i data-feather="link"></i>
+					<div class="slider-wrapper">
+						<div class="slider">
+							<div class="slider-text1">Pokok KL</div>
+						</div>
+					</div>
+					<img class="w3" src="img/pokok-kl-cover.gif" alt="Pokok.KL">
+				</a>
+			</div>
 
 			<div class="item w2 unhover" id="merdeka">
 				<div class="proportional ratio-16-9">
@@ -106,9 +109,9 @@
 				<a href="portfolio/tepi-jalan">
 					<i data-feather="link"></i>
 					<div class="slider-wrapper">
-	          <div class="slider">
-	              <div class="slider-text1">Tepi Jalan</div>
-	          </div>
+						<div class="slider">
+							<div class="slider-text1">Tepi Jalan</div>
+						</div>
 					</div>
 					<img class="w3" src="img/tepi-jalan-cover.webp" alt="Tepi-Jalan">
 				</a>
@@ -128,7 +131,7 @@
 					<i data-feather="link"></i>
 					<div class="slider-wrapper">
 						<div class="slider">
-								<div class="slider-text1">Vandure</div>
+							<div class="slider-text1">Vandure</div>
 						</div>
 					</div>
 					<img class="w3" src="img/vandure-cover.webp" alt="Vandure">
@@ -139,9 +142,9 @@
 				<a href="portfolio/cloud-wedding">
 					<i data-feather="link"></i>
 					<div class="slider-wrapper">
-	          <div class="slider">
-	              <div class="slider-text1">Cloud Weddings</div>
-	          </div>
+						<div class="slider">
+							<div class="slider-text1">Cloud Weddings</div>
+						</div>
 					</div>
 					<img class="w3" src="img/cloud-wedding-cover.gif" alt="Cloud Wedding">
 				</a>
@@ -157,33 +160,36 @@
 				</div>
 			</div>
 
-		<div class="hoverable item w1" id="lightAWay">
-			<a href="portfolio/light-a-way">
-				<i data-feather="link"></i>
-				<div class="slider-wrapper">
-					<div class="slider">
+			<div class="hoverable item w1" id="lightAWay">
+				<a href="portfolio/light-a-way">
+					<i data-feather="link"></i>
+					<div class="slider-wrapper">
+						<div class="slider">
 							<div class="slider-text1">Light a Way</div>
+						</div>
 					</div>
-				</div>
-				<img class="w3" src="img/light-a-way-cover.webp" alt="Light a Way">
-			</a>
-		</div>
+					<img class="w3" src="img/light-a-way-cover.webp" alt="Light a Way">
+				</a>
+			</div>
 
 			<img class="item w1 unhover" id="underpromise" src="img/underpromise-cover.webp" alt="Underpromise Overdeliver">
 
-		<div class="hoverable item w1" id="orkestraMelayang">
-			<a href="portfolio/orkestra-melayang">
-				<i data-feather="link"></i>
-				<div class="slider-wrapper">
-					<div class="slider">
+			<div class="hoverable item w1" id="orkestraMelayang">
+				<a href="portfolio/orkestra-melayang">
+					<i data-feather="link"></i>
+					<div class="slider-wrapper">
+						<div class="slider">
 							<div class="slider-text1">Orkestra Melayang</div>
+						</div>
 					</div>
-				</div>
-				<img class="w3" src="img/orkestra-melayang-cover.webp" alt="Orkestra Melayang">
-			</a>
-		</div>
+					<img class="w3" src="img/orkestra-melayang-cover.webp" alt="Orkestra Melayang">
+				</a>
+			</div>
 
 			<img class="item w1 unhover" id="seyvaq" src="img/seyvaq-cover.gif" alt="Seyvaq">
+
+			<img class="item w1 unhover" id="malaysiaRelief" src="img/malaysia-relief-cover.webp" alt="Malaysia Shaded Relief Map">
+
 
 		</div>
 	</div>
@@ -208,8 +214,12 @@
 		smooth: true
 	});
 	</script> -->
-	<script>$("#footer").load( "footer.html" );</script>
-	<script>$("#nav-items").load( "menu.html" );</script>
+	<script>
+		$("#footer").load("footer.html");
+	</script>
+	<script>
+		$("#nav-items").load("menu.html");
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
 	<script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
@@ -224,37 +234,46 @@
 		feather.replace()
 	</script>
 	<script>
-			$(document).ready(function () {
+		$(document).ready(function() {
 
-		    $('#header').fadeIn(300).removeClass('hidden');
-				setTimeout(function() {$('#headText').fadeIn(300).removeClass('hidden');}, 300);
-				setTimeout(function() {$('#headLinks').fadeIn(300).removeClass('hidden');}, 600);
-				setTimeout(function() {$('#index-content').fadeIn(300).removeClass('hidden');}, 2000);
-				setTimeout(function() {$('#footer').fadeIn(300).removeClass('hidden');}, 2200);
+			$('#header').fadeIn(300).removeClass('hidden');
+			setTimeout(function() {
+				$('#headText').fadeIn(300).removeClass('hidden');
+			}, 300);
+			setTimeout(function() {
+				$('#headLinks').fadeIn(300).removeClass('hidden');
+			}, 600);
+			setTimeout(function() {
+				$('#index-content').fadeIn(300).removeClass('hidden');
+			}, 2000);
+			setTimeout(function() {
+				$('#footer').fadeIn(300).removeClass('hidden');
+			}, 2200);
 
-			});
+		});
 	</script>
 	<script>
-	setTimeout(function() {
-		var container = document.querySelector('#index-content');
-		var msnry;
-		$(container).imagesLoaded()
-			.always(function(instance) {
-				msnry = new Masonry(container, {
-					columnWidth: '.grid-sizer',
-					gutter: '.grid-gutter',
-					itemSelector: '.item',
-					transitionDuration: '0.1s'
+		setTimeout(function() {
+			var container = document.querySelector('#index-content');
+			var msnry;
+			$(container).imagesLoaded()
+				.always(function(instance) {
+					msnry = new Masonry(container, {
+						columnWidth: '.grid-sizer',
+						gutter: '.grid-gutter',
+						itemSelector: '.item',
+						transitionDuration: '0.1s'
+					});
+					imgLoadHandler = function() {
+						console.log("img loaded, calling masonry.layout()");
+						msnry.layout();
+					}
+					$('img').bind('load', imgLoadHandler);
+					$('#loader').hide();
 				});
-				imgLoadHandler = function() {
-					console.log("img loaded, calling masonry.layout()");
-					msnry.layout();
-				}
-				$('img').bind('load', imgLoadHandler);
-				$('#loader').hide();
-			});
-		}, 2100);
+		}, 2300);
 	</script>
 
 </body>
+
 </html>
